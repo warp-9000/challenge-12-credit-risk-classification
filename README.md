@@ -8,9 +8,8 @@ This is the challenge project for UW Fintech 2022 Module 12.
 
 ## Background
 
-Credit risk poses a classification problem that’s inherently imbalanced because the number of healthy loans easily outnumber the number of risky loans. This credit risk classification uses various techniques to train and evaluate models with imbalanced classes to better identify the creditworthiness of borrowers.
-
-For both cases, you’ll get the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+* Credit risk poses a classification problem that’s inherently imbalanced because the number of healthy loans easily outnumber the number of risky loans. This credit risk classification uses various techniques to train and evaluate models with imbalanced classes to better identify the creditworthiness of borrowers.
+* For both cases, you’ll get the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
 ## Overview of the Analysis
 
@@ -18,9 +17,9 @@ For both cases, you’ll get the count of the target classes, train a logistic r
 * The financial data used to train the model included: loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, total debt, and loan status (healthy vs risky).
 * By training on the financial data, the model will try preduct whether a loan's status is healthy or risky (see: 'targets.value_counts()')
 * To accomplish this we complete the following stages of the machine learning (ML) process:
-** First, split the original data into two sets: one for training the ML model, one for testing the ML model. Note the original data includes "loan_status", which is the value we want to predict.
-** Second, create a model and train it with the data set aside for training.
-** Third, use the test data to predict the outcome, and then evalute the accuracy, precision, etc. of the model by comparing the predicted outcome against the test outcome.
+  * First, split the original data into two sets: one for training the ML model, one for testing the ML model. Note the original data includes "loan_status", which is the value we want to predict.
+  * Second, create a model and train it with the data set aside for training.
+  * Third, use the test data to predict the outcome, and then evalute the accuracy, precision, etc. of the model by comparing the predicted outcome against the test outcome.
 * The two primary methods used to classify credit risk are: Logistic Regression model (as it's good at predicting discrete outcomes) and RandomOverSampler from the imbalenced-learn library (to improve the predictive capability for riskier loans for which we have less data).
 
 ## Results
